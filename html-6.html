@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bodyy{
+            background-color: black;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+                background:linear-gradient(135deg,#00feba,#5b548a) ;
+                width:25%;
+                height: 80%;
+                border-radius: 30px;
+                padding: 45px 35px;
+                
+        }
+        .search{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+        }
+        .search input{
+            flex:1;
+             margin: 5px;
+             outline: 0;
+             padding: 12px 45px 8px 20px;
+             border: 0;
+             border-radius: 30px;
+             background-color: white;
+             color:#555;
+             margin-left: 10px;
+            }
+        .search button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            color: #555;
+            background-color: #ebfffc;
+            border-radius: 50%;
+            border: 0px;
+            width: 33px;
+            height: 33px;
+            cursor: pointer;
+
+            }
+            .search button img{
+                width: 15px;
+                color:#555;
+            }
+            
+            .weather {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: 5px;
+            }
+            h1,h2{
+               
+            color: white;
+            }
+            .details{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 35px;
+
+            }
+            .humidity{
+                display: flex;
+            }
+            .wind{
+                display: flex;
+            }
+            .tt, .ttt{
+                margin-left: 8px;
+            }
+            h4,h6{
+                color: rgb(247, 242, 242);
+            }
+            .col img{
+                width: 25px;
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="bodyy">
+        <div class="card">
+            <div class="search">
+                <input  type="text" placeholder="Enter city name" spellcheck="false" autocomplete="off">
+                <button ><img src ='../Weather app/images/search.png'></button>
+            </div>
+            <div class="weather">
+                <img src="../Weather app/images/rain.png" class="icon">
+                <h1>5°C</h1>
+                <h2>India</h2>
+                <div class="details">
+                    <div class="humidity">
+                        <div class="col">
+                            <img src="../Weather app/images/humidity.png">
+                        </div>
+                        <div class="tt">
+                            <h4>48%</h4>
+                        <h6>Humidity</h6>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="wind">
+                        <div class="col"><img src="../Weather app/images/wind.png"></div>
+                        <div class="ttt"><h4>10.29 Km/h</h4>
+                            <h6>Wind Speed</h6></div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Weather app/trail.js" ></script>
+</body>
+</html>
